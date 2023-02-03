@@ -1,0 +1,80 @@
+/* Base Styles */
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	color: hsl(257, 7%, 63%);
+	font-size: 18px;
+}  
+
+h1 {
+	font-size: 40px;
+}
+	
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+.container {
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+.button {
+	background-color: hsl(180, 66%, 49%);
+	color: white;
+	padding: 1rem 3rem;
+	border-radius: 50px;
+	font-weight: 500;
+	font-size: 20px;
+	display: inline-block;
+}
+
+
+/*Header Styles */
+
+header {
+	padding: 2rem 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	z-index: 1;
+} 
+
+#header-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-icon {
+  display: grid;
+  place-items: center;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+	width: 28px;
+    height: 3px;
+    background: hsl(257, 7%, 63%);
+    display: block;
+}
+
+#main-nav {
+	z-index: 0;
+	display: none;
+	position: absolute;
+	right: 1rem;
+	background-color: red;
+}
+
