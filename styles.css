@@ -70,11 +70,38 @@ header {
     display: block;
 }
 
-#main-nav {
-	z-index: 0;
+#mobile-nav {
+	margin: 6rem auto 0 auto;
+	padding: 2rem 1rem;
 	display: none;
-	position: absolute;
-	right: 1rem;
-	background-color: red;
+	background-color: hsl(257, 27%, 26%);
+	width: 90%;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#mobile-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#top-nav {
+	border-bottom: 1px solid hsl(257, 7%, 63%);
+}
+
+#mobile-nav ul li {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+#mobile-nav ul a {
+	color: white;
+}
+
+@media screen and (min-width: 501px) {
+  .menu-icon {
+	  display: none;
+  }
 }
 
