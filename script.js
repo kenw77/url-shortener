@@ -2,7 +2,7 @@
 
 let state = "closed";
 const menuIcon = document.querySelector(".menu-icon");
-const mobileMenu = document.getElementById("mobile-nav");
+const mobileMenu = document.getElementById("main-nav");
 
 const showMenu = () => {
 	if (state !== "open") {

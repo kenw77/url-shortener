@@ -40,19 +40,24 @@ ul li {
 /*Header Styles */
 
 header {
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background-color: white;
 	z-index: 1;
+}
+
+header img {
+	padding-bottom: 2rem;
 } 
 
 #header-flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .menu-icon {
@@ -61,6 +66,7 @@ header {
   height: 30px;
   width: 30px;
   cursor: pointer;
+  padding-bottom: 2rem;
 }
 
 .menu-icon span {
@@ -70,9 +76,9 @@ header {
     display: block;
 }
 
-#mobile-nav {
-	margin: 6rem auto 0 auto;
-	padding: 2rem 1rem;
+
+#main-nav {
+	margin: 0 auto;
 	display: none;
 	background-color: hsl(257, 27%, 26%);
 	width: 90%;
@@ -81,7 +87,7 @@ header {
 	border-radius: 10px;
 }
 
-#mobile-nav ul {
+#main-nav ul {
 	margin: 0;
 	padding: 0;
 }
@@ -90,12 +96,12 @@ header {
 	border-bottom: 1px solid hsl(257, 7%, 63%);
 }
 
-#mobile-nav ul li {
+#main-nav ul li {
 	padding: 1rem;
 	font-weight: 700;
 }
 
-#mobile-nav ul a {
+#main-nav ul a {
 	color: white;
 }
 
