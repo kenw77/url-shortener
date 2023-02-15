@@ -9,27 +9,27 @@ const showMenu = () => {
 		let id = setInterval(frame, 1);
 		let height = 0;
 		function frame() {
-			mobileMenu.style.display = "block";
-			if (height === 400) {
+			mobileMenu.style.display = "flex";
+			if (height === 27) {
 				clearInterval(id);
 			} else {
-				height++;
-				mobileMenu.style.height = height + "px";
+				height +=0.5;
+				mobileMenu.style.height = height + "rem";
 			}
 		}
 		state = "open";
 	} else {
 		let id = setInterval(frame, 1);
-		let pos = mobileMenu.style.top;
-		pos = pos.replace(/[^0-9]/g, '');
+		let height = mobileMenu.style.height;
+		height = height.replace(/[^0-9]/g, '');
 		function frame() {
-			if (pos === -100) {
+			if (height === 0) {
 				clearInterval(id);
+				
 			} else {
-				console.log(pos);
-				pos--;
-				console.log(pos);
-				mobileMenu.style.top = pos + "px";
+				height -= 0.5;
+				mobileMenu.style.height = height + "rem";
+				console.log(height);
 			}
 		}
 		state = "closed";
